@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BBA3 Fruit Brust</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <!-- tailwind an daisyui  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
@@ -47,9 +48,9 @@
       }
     </style>
   </head>
-  <body class="font-lato my-6 mx-6 md:my-12 md:mx-12 lg:my-16 lg:mx-24">
+  <body class="font-lato ">
     <!-- header section  -->
-    <header>
+    <header class="my-6 mx-6 md:my-12 md:mx-12 lg:my-16 lg:mx-24">
       <!-- nav section  -->
       <nav class="my-5 lg:my-10">
         <div
@@ -252,7 +253,7 @@
     </header>
     <!-- header section  -->
 
-    <main>
+    <main class="my-6 mx-6 md:my-12 md:mx-12 lg:my-16 lg:mx-24">
       <!-- deal of the day  -->
       <section class="my-16">
         <div
@@ -1255,5 +1256,42 @@
       </section>
       <!-- about section  -->
     </main>
+
+
+    <footer class="footer footer-center p-5 lg:p-10 bg-[#121212] text-base-content text-white rounded">
+        <div class="items-center">
+            <a class="normal-case text-2xl lg:text-4xl text-white font-bold"
+              ><img
+                src="./images/logo.png"
+                alt="logo"
+                class="inline-flex w-9 lg:w-[45px] mr-2 lg:mr-3"
+              />
+              Fruit Brust
+            </a>
+          </div>
+
+          <ul class="flex flex-wrap gap-8 justify-center lg:gap-14">
+            <li><a class="link link-hover">Home</a></li> 
+            <li><a class="link link-hover">About Us</a></li> 
+            <li><a class="link link-hover">Shop</a></li> 
+            <li><a class="link link-hover">All Fruits</a></li> 
+            <li><a class="link link-hover">Support</a></li> 
+            <li><a class="link link-hover">My Account</a></li> 
+            
+          </ul>
+ 
+        <div>
+            <ul class="flex flex-wrap gap-8 justify-center lg:gap-14 text-4xl">
+                <li><i class="fa-brands fa-twitter"></i></li> 
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-apple"></i></li>
+                 
+                
+              </ul>
+        </div> 
+      </footer>
   </body>
 </html>
