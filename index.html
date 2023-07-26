@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBA3 Fruit Brust</title>
+    <!-- tailwind an daisyui  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom tailwind class  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-bg": "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- custom fonts and styles  -->
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <!-- nav section  -->
+      <nav>
+        <div
+          class="navbar lg:bg-primary-bg lg:py-3 justify-between lg:px-10 rounded-full text-white">
+        <!-- nav leftside content   -->
+          <div class="navbar-start">
+            <!-- mobile screen logo  -->
+            <div class="lg:hidden w-96">
+              <a class="normal-case text-xl text-[#121212] font-bold"
+                ><img
+                  src="./images/logo.png"
+                  alt="logo"
+                  class="inline-flex w-[40px] mr-2"
+                />
+                Fruit Brust
+              </a>
+            </div>
+            <!-- link for large screen  -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- logo for large screen  -->
+          <div class="hidden lg:flex items-center w-96">
+            <a class="normal-case text-4xl text-white font-bold"
+              ><img
+                src="./images/logo.png"
+                alt="logo"
+                class="inline-flex w-[45px] mr-4"
+              />
+              Fruit Brust
+            </a>
+          </div>
+
+
+          <!-- nav rightside search input for large screen  -->
+          <div class="navbar-end hidden lg:block">
+            <div class="form-control">
+              <div class="input-group justify-end">
+                <input type="text" placeholder="Search…" class="input" />
+                <button class="btn bg-white border-none text-[#121212]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- right dropdown for mobiles  -->
+          <div class="dropdown text-black">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 absolute right-0"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav section  -->
+    </header>
+    <!-- header section  -->
+  </body>
+</html>
